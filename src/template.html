@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data sekolah | ERIN - SIB x Dicoding</title>
+</head>
+
+<body class="bg-dark text-white">
+    <nav-custom></nav-custom>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 py-3">
+                <div class="card sticky-top shadow-lg" style="top: 56px; border: none !important;">
+                    <div class="card-body bg-secondary" style="border-radius: 5px !important">
+                        <input type="text" name="nama" id="nama" placeholder="nama sekolah" class="form-control">
+                        <button type="button" id="btnSubmit" class="btn btn-sm btn-outline-light mt-2">
+                            Cari Sekolah
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 py-3">
+                <div id="listWrapper">
+                    <div class="row listMHS"></div>
+
+                    <!-- next prev button -->
+                    <br>
+                    <div class="row d-none" id="pagingWrapper">
+                        <small class="text-muted" id="total_data"></small>
+                        <div class="col-md-12">
+                            <button type="button" id="btnPrev" class="btn btn-sm btn-outline-light mt-2 disabled">
+                                Prev
+                            </button>
+                            <button type="button" id="btnNext" class="btn btn-sm btn-outline-light mt-2">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
